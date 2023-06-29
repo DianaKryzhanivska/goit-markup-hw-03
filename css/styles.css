@@ -18,13 +18,13 @@ body {
   list-style: none;
 }
 
-/* Reset
+/* Reset */
 h1,
 h2,
 h3,
 p {
   margin: 0;
-} */
+}
 
 .list {
   margin: 0;
@@ -129,7 +129,8 @@ p {
 
 .hero-title {
   width: 496px;
-  padding: 188px auto 292ppx;
+  padding-top: 188px;
+  padding-bottom: 48px;
   color: #ffffff;
   background-color: var(--background-color);
   font-weight: 700;
@@ -142,7 +143,8 @@ p {
 .hero-button {
   display: inline-block;
   padding: 16px 32px;
-  margin-bottom: 188px;
+  margin-bottom: 204px;
+  min-width: 169px;
   color: #ffffff;
   background-color: var(--brand-color);
   font-family: Roboto, sans-serif;
@@ -186,6 +188,15 @@ p {
   width: 264px;
   margin-top: 120px;
   margin-bottom: 120px;
+  margin-right: 24px;
+}
+
+.benefits-card:not(:last-child) {
+  margin-right: 24px;
+}
+
+.benefits-examples {
+  margin-bottom: 8px;
 }
 
 .benefits-examples,
@@ -213,10 +224,14 @@ p {
 }
 
 /* What are we doing */
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .works-title {
-  width: 323px;
-  margin-left: 559px;
-  margin-right: 558px;
+  min-width: 323px;
+  padding-top: 0;
   margin-bottom: 72px;
   color: #2e2f42;
   font-weight: 700;
@@ -228,21 +243,42 @@ p {
 }
 
 .works-item {
+  margin-right: 24px;
   margin-bottom: 120px;
+}
+
+.works-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 /* Our team */
 
+.team-card {
+  margin-bottom: 120px;
+}
+
+.team-description {
+  margin-bottom: 32px;
+}
+
+.team-examples {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
 .team-title {
-  width: 162px;
+  min-width: 162px;
   padding-top: 120px;
-  padding-bottom: 572px;
-  padding-left: 639px;
-  padding-right: 639px;
+  padding-bottom: 72px;
 }
 
 .team-section {
   background-color: #f4f4fd;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .team-list .team-card {
@@ -257,6 +293,8 @@ p {
 }
 
 .footer-text {
+  width: 264px;
+  padding-bottom: 100px;
   color: var(--second-background-color);
   background-color: var(--background-color);
   line-height: 1.5;
@@ -264,6 +302,8 @@ p {
 }
 
 .footer .link {
+  padding-top: 101.5px;
+  margin-bottom: 17.5px;
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -280,11 +320,19 @@ p {
 
 /* PORTFOLIO */
 
+.projects-list {
+  padding-top: 96px;
+  padding-bottom: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
 .projects-card .link {
   text-decoration: none;
 }
 
-.projects-list .projects-nav {
+.projects-list .first {
   font-family: Roboto, sans-serif;
   color: var(--brand-color);
   background-color: var(--second-background-color);
@@ -295,8 +343,19 @@ p {
   cursor: pointer;
 }
 
-.projects-list .projects-nav:hover,
-.projects-list .projects-nav:focus {
+.projects-list .second {
+  font-family: Roboto, sans-serif;
+  color: var(--brand-color);
+  background-color: var(--second-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.projects-nav:hover,
+.projects-nav:focus {
   color: #ffffff;
   background-color: #404bbf;
 }
@@ -304,6 +363,7 @@ p {
 .projects-cases {
   display: flex;
   flex-wrap: wrap;
+  gap: 32px;
 }
 
 .projects-card {
