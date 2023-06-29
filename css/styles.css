@@ -61,7 +61,7 @@ ul {
 
 /* Site nav */
 
-.list .link {
+.header-list .link {
   color: var(--secondary-color);
   font-size: 16px;
   font-weight: 500;
@@ -70,22 +70,19 @@ ul {
   text-decoration: none;
 }
 
-.list .link:hover,
-.list .link:focus {
+.header-list .link:hover,
+.header-list .link:focus {
   color: #404bbf;
 }
 
-.list .link:current {
+.header-list .link:current {
   color: var(--brand-color);
 }
 
 /* Adress */
 
-.contacts {
+.contacts-link {
   font-style: normal;
-}
-
-.contacts .link {
   text-decoration: none;
   list-style: none;
   font-family: Roboto, sans-serif;
@@ -96,8 +93,8 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.list .link:hover,
-.list .link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: #404bbf;
 }
 
@@ -121,7 +118,7 @@ ul {
   text-align: center;
 }
 
-.hero .button {
+.hero-button {
   padding-bottom: 188px;
   display: inline-block;
   padding: 16px 32px;
@@ -136,14 +133,15 @@ ul {
   cursor: pointer;
 }
 
-.hero .button:hover,
-.hero .button:focus {
+.hero-button:hover,
+.hero-button:focus {
   background-color: #404bbf;
 }
 
-/* Advantages */
+/* Benefits + OUR TEAM .list .examples*/
 
-.list .examples {
+.benefits-examples,
+.team-examples {
   padding-top: 120px;
   margin-bottom: 8px;
   font-family: Roboto, sans-serif;
@@ -156,7 +154,8 @@ ul {
   text-transform: capitalize;
 }
 
-.text {
+.benefits-text,
+.team-description {
   padding-bottom: 120px;
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -173,7 +172,7 @@ ul {
 }
 
 /* What are we doing */
-.section-title {
+.works-title {
   padding-top: 120px;
   margin-bottom: 72px;
   color: #2e2f42;
@@ -194,27 +193,27 @@ ul {
   background-color: #ffffff;
 }
 
-.card .team-name {
+.team-examples {
   padding-top: 32px;
   padding-bottom: 8px;
 }
 
-.description {
+.team-description {
   padding-bottom: 32px;
 }
 
-.card {
+.team-card {
   padding-bottom: 120px;
 }
 
 /* Footer */
 
-.footer-logo {
+.footer {
   color: #f4f4fd;
   background-color: var(--background-color);
 }
 
-.footer-logo .text {
+.footer-text {
   padding-bottom: 100px;
   color: var(--second-background-color);
   background-color: var(--background-color);
@@ -222,30 +221,7 @@ ul {
   letter-spacing: 0.02em;
 }
 
-/* PORTFOLIO */
-
-.list .work-nav {
-  font-family: Roboto, sans-serif;
-  color: var(--brand-color);
-  background-color: var(--second-background-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-}
-
-.list .work-nav:hover,
-.list .work-nav:focus {
-  color: #ffffff;
-  background-color: #404bbf;
-}
-
-.footer-logo {
-  background-color: var(--background-color);
-}
-
-.footer-logo .link {
+.footer .link {
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -256,6 +232,25 @@ ul {
   text-decoration: none;
 }
 
-.footer-logo .accent {
+.footer .accent {
   color: #f4f4fd;
+}
+
+/* PORTFOLIO */
+
+.projects-nav {
+  font-family: Roboto, sans-serif;
+  color: var(--brand-color);
+  background-color: var(--second-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.projects-nav:hover,
+.projects-nav:focus {
+  color: #ffffff;
+  background-color: #404bbf;
 }
