@@ -41,7 +41,7 @@ ul {
 }
 
 /* Logo */
-.header .link {
+.logo-nav .link {
   color: var(--brand-color);
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -107,8 +107,13 @@ ul {
 }
 
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 48px;
+  display: flex;
+  width: 496px;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding-top: 188px;
+  padding-bottom: 48px;
+  width: 496px;
   color: #ffffff;
   background-color: var(--background-color);
   font-weight: 700;
@@ -120,6 +125,11 @@ ul {
 
 .hero-button {
   display: inline-block;
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 188px;
   color: #ffffff;
   background-color: var(--brand-color);
   font-family: Roboto, sans-serif;
@@ -154,6 +164,20 @@ ul {
   list-style: none;
 }
 
+.benefits-card {
+  display: flex;
+  width: 264px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  display: flex;
+  width: 264px;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
 .benefits-examples,
 .team-examples,
 .projects-examples {
@@ -180,6 +204,10 @@ ul {
 
 /* What are we doing */
 .works-title {
+  width: 323px;
+  margin-left: 559px;
+  margin-right: 558px;
+  margin-bottom: 72px;
   color: #2e2f42;
   font-weight: 700;
   font-size: 36px;
@@ -189,7 +217,19 @@ ul {
   text-transform: capitalize;
 }
 
+.works-item {
+  margin-bottom: 120px;
+}
+
 /* Our team */
+
+.team-title {
+  width: 162px;
+  padding-top: 120px;
+  padding-bottom: 572px;
+  padding-left: 639px;
+  padding-right: 639px;
+}
 
 .team-section {
   background-color: #f4f4fd;
