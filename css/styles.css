@@ -4,6 +4,7 @@
   --third-color: #434455;
   --background-color: #2e2f42;
   --second-background-color: #f4f4fd;
+  --border-color: #e7e9fc;
 }
 
 body {
@@ -184,7 +185,6 @@ p {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  visibility: hidden;
 }
 
 .benefits-list {
@@ -265,31 +265,38 @@ p {
 /* Our team */
 
 .team-card {
-  margin-bottom: 120px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-box {
+  padding: 32px 16px;
 }
 
 .team-description {
   margin-bottom: 32px;
+  text-align: center;
 }
 
 .team-examples {
   margin-top: 32px;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .team-title {
+  margin-bottom: 72px;
   min-width: 162px;
-  padding-top: 120px;
-  padding-bottom: 72px;
 }
 
 .team-section {
+  padding: 120px 0;
   background-color: #f4f4fd;
 }
 
 .team-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
 }
 
 .team-list .team-card {
@@ -332,19 +339,35 @@ p {
 
 /* PORTFOLIO */
 
-.projects-list {
+.projects {
   padding-top: 96px;
-  padding-bottom: 72px;
+  padding-bottom: 120px;
+}
+
+.projects-examples {
+  margin-bottom: 8px;
+}
+
+.proojects-box {
+  padding: 32px 16px;
+}
+
+.projects-list {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 72px;
   gap: 24px;
+  justify-content: center;
 }
 
 .projects-card .link {
   text-decoration: none;
 }
 
-.projects-list .first {
+.work-nav {
+  border-radius: 4px;
+  padding: 12px 24px;
+  border: 1px solid var(--border-color);
   font-family: Roboto, sans-serif;
   color: var(--brand-color);
   background-color: var(--second-background-color);
@@ -355,27 +378,19 @@ p {
   cursor: pointer;
 }
 
-.projects-list .second {
-  font-family: Roboto, sans-serif;
-  color: var(--brand-color);
-  background-color: var(--second-background-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-}
-
-.projects-nav:hover,
-.projects-nav:focus {
+.work-nav:hover,
+.work-nav:focus {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
 
 .projects-cases {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  row-gap: 48px;
+  border: 1px solid var(--border-color);
+  border-top: none;
 }
 
 .projects-card {
