@@ -12,6 +12,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-list,
 .contacts-list,
 .projects-list {
@@ -41,10 +45,10 @@ p {
 }
 
 /* Main-nav */
-.main-nav {
+.nav {
+  display: flex;
   justify-content: flex-start;
   align-items: center;
-  display: flex;
 }
 
 /* Logo */
@@ -72,6 +76,7 @@ p {
 .header-list {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .contacts-list {
@@ -83,6 +88,7 @@ p {
 .header-list .link {
   display: block;
   padding: 20px 0;
+  gap: 40px;
   color: var(--secondary-color);
   font-size: 16px;
   font-weight: 500;
@@ -125,12 +131,12 @@ p {
 .hero {
   text-align: center;
   background-color: var(--background-color);
+  pad: 188px 0;
 }
 
 .hero-title {
-  width: 496px;
-  padding-top: 188px;
-  padding-bottom: 48px;
+  max-width: 496px;
+  margin-bottom: 48px;
   color: #ffffff;
   background-color: var(--background-color);
   font-weight: 700;
@@ -141,10 +147,13 @@ p {
 }
 
 .hero-button {
-  display: inline-block;
+  display: block;
   padding: 16px 32px;
-  margin-bottom: 204px;
+  margin-bottom: 188px;
   min-width: 169px;
+  border: none;
+  border-radius: 4px;
+  height: 56px;
   color: #ffffff;
   background-color: var(--brand-color);
   font-family: Roboto, sans-serif;
@@ -162,6 +171,10 @@ p {
 
 /* Benefits + Our Team */
 
+.benefits-container {
+  padding: 120px 0;
+}
+
 .benefits-title,
 .team-title {
   color: #2e2f42;
@@ -171,11 +184,13 @@ p {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  visibility: hidden;
 }
 
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
 }
 
 .benefits-list,
@@ -227,6 +242,7 @@ p {
 .works-list {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 120px;
 }
 
 .works-title {
@@ -243,12 +259,7 @@ p {
 }
 
 .works-item {
-  margin-right: 24px;
-  margin-bottom: 120px;
-}
-
-.works-item:not(:last-child) {
-  margin-right: 24px;
+  width: calc((100% - 48px) / 3);
 }
 
 /* Our team */
@@ -288,6 +299,7 @@ p {
 /* Footer */
 
 .footer {
+  padding: 100px 0;
   color: #f4f4fd;
   background-color: var(--background-color);
 }
@@ -302,8 +314,8 @@ p {
 }
 
 .footer .link {
-  padding-top: 101.5px;
-  margin-bottom: 17.5px;
+  display: inline-block;
+  margin-bottom: 16px;
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
