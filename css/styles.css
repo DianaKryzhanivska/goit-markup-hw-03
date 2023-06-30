@@ -13,6 +13,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+img {
+  display: block;
+}
+
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -46,10 +50,12 @@ p {
 }
 
 /* Main-nav */
-.nav {
+.header .nav {
+  padding: 24px 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 40px;
 }
 
 /* Logo */
@@ -132,7 +138,7 @@ p {
 .hero {
   text-align: center;
   background-color: var(--background-color);
-  pad: 188px 0;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -172,8 +178,21 @@ p {
 
 /* Benefits + Our Team */
 
-.benefits-container {
-  padding: 120px 0;
+.benefits {
+  padding bottom: 120px;
+}
+
+.benefits-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .benefits-title,
@@ -188,6 +207,7 @@ p {
 }
 
 .benefits-list {
+  width: calc((100% - 72px) / 4);
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -200,14 +220,7 @@ p {
 }
 
 .benefits-card {
-  width: 264px;
-  margin-top: 120px;
-  margin-bottom: 120px;
-  margin-right: 24px;
-}
-
-.benefits-card:not(:last-child) {
-  margin-right: 24px;
+  width: calc((100% - 48px) / 3);
 }
 
 .benefits-examples {
