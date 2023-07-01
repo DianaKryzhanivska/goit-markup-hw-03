@@ -135,7 +135,8 @@ img {
 }
 
 .nav-link {
-  padding: 20px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -339,7 +340,9 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  column-gap: 24px;
+  row-gap: 48px;
+  border-top: none;
 }
 
 .portfolio-card {
@@ -351,18 +354,12 @@ img {
   border: 1px solid var(--border-color);
 }
 
-/* / */
-/*  */
-/*  */
-.portfolio-list {
+.buttons-list {
   display: flex;
   justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
 }
-/*  */
-/*  */
-/*  */
 
 .portfolio-button {
   border-radius: 4px;
