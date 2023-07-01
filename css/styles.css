@@ -84,7 +84,6 @@ img {
 }
 
 .container {
-  outline: 2px solid tomato;
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
@@ -223,6 +222,7 @@ img {
 }
 
 .hero-title {
+  color: #ffffff;
   max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
